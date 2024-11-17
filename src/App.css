@@ -1,38 +1,48 @@
-.App {
-  text-align: center;
+body {
+  line-height: 1.2;
+  font-family: "Inter" , sans-serif;
+  font-style: normal;
+  font-weight: 400;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h1 {
+  font-family: "-Lexend", sans-serif;
+  font-weight: 700;
+  font-style: normal;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.img-background {
+  background-image: url('https://ezrar9.sg-host.com/wp-content/uploads/2024/01/oie_81451349eN2bfLr.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 583px;
+  padding: 168px;
+  background-position: 50% 50%;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.front-text {
+  display: flex;
+  color: white;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  padding: 0 24px;
+}
+
+.front-spacer {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: flex-start;
+  flex-basis: 50%;
+  padding: 0 24px;
 }
 
-.App-link {
-  color: #61dafb;
+.front-spacer h1 {
+  margin: 0;
+  font-size: 50px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.front-body p{
+  font-size: 1.05rem;
+  padding: 40px 0;
+  margin: 0;
 }
