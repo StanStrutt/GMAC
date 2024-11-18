@@ -13,8 +13,8 @@ function App() {
                 <br/>
                 Autism Consortium</h1>           
               <div className='front-body'>
-                <p>We’re here to help you find valuable information and connect with a community that <br/> understands.
-                  Whether you’re a parent, caregiver, educator, or on the autism spectrum, we <br/> can help.</p>
+                <p>We’re here to help you find valuable information and connect with a community that understands.
+                  Whether you’re a parent, caregiver, educator, or on the autism spectrum, we can help.</p>
               </div>
               <div className='drop-down'>
                 <Dropdownmenu />

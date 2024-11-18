@@ -10,43 +10,37 @@ export default function  Dropdownmenu() {
     return (
         <div className='dropdowns'>
             <div className='label-holder'>
-                <label>
-                    <select id='locationDropdown' value={location} onChange={handleLocationDropdownChange}>
-                        <option hidden selected value="">Location</option>
-                        <option value="Bolton">Bolton</option>
-                        <option value="Bury">Bury</option>
-                        <option value="Manchester">Manchester</option>
-                        <option value="Oldham">Oldham</option>
-                        <option value="Rochdale">Rochdale</option>
-                        <option value="Salford">Salford</option>
-                        <option value="Stockport">Stockport</option>
-                        <option value="Tameside">Tameside</option>
-                        <option value="Trafford">Trafford</option>
-                        <option value="Wigan">Wigan</option>
-                    </select>
-                </label>
+                <select id='locationDropdown' value={location} onChange={handleLocationDropdownChange}>
+                    <option hidden selected value="">Location</option>
+                    <option value="Bolton">Bolton</option>
+                    <option value="Bury">Bury</option>
+                    <option value="Manchester">Manchester</option>
+                    <option value="Oldham">Oldham</option>
+                    <option value="Rochdale">Rochdale</option>
+                    <option value="Salford">Salford</option>
+                    <option value="Stockport">Stockport</option>
+                    <option value="Tameside">Tameside</option>
+                    <option value="Trafford">Trafford</option>
+                    <option value="Wigan">Wigan</option>
+                </select>
             </div>
             {location !== "" &&(
-            <div className='label-holder'>
-                <label>
-                    <select id='ageDropdown' value={age} onChange={handleAgeDropdownChange}>
-                        <option hidden selected>Age</option>
-                        <option value="Child">Child</option>
-                        <option value="Adult">Adult</option>
-                    </select>
-                </label>
+            <div className='label-holder'>              
+                <select id='ageDropdown' value={age} onChange={handleAgeDropdownChange}>
+                    <option hidden selected>Age</option>
+                    <option value="Child">Child</option>
+                    <option value="Adult">Adult</option>
+                </select>
             </div>
             )}
             {age === "Child" &&(
                 <div className='label-holder'>
-                    <label>
-                        <select id='ageRangeDropdown' value={ageRange} onChange={handleAgeRangeDropdownChange}>
-                            <option hidden selected>Age range</option>
-                            <option value="0-4">0-4</option>
-                            <option value="5-16">5-16</option>
-                            <option value="16+">16+</option>
-                        </select>
-                    </label>
+                    <select id='ageRangeDropdown' value={ageRange} onChange={handleAgeRangeDropdownChange}>
+                        <option hidden selected>Age range</option>
+                        <option value="0-4">0-4</option>
+                        <option value="5-16">5-16</option>
+                        <option value="16+">16+</option>
+                    </select>
                 </div>
             )}
         {/* <div>

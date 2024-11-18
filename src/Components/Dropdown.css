@@ -1,16 +1,17 @@
 .dropdowns {
-    display: flex;
-  }
+  display: flex;
+}
   
-  .label-holder select {
-    background-color: #7d3e8b;
-    border: 0;
-    color: #fff;
-    font-size: 18px;
-    text-align: center;
-    font-family: "Inter" , sans-serif;
-    padding: 9.6px 5px;
-    width: 140px;
-  }
-  
+.label-holder select {
+  background-color: #7d3e8b;
+  border-color: white;
+  border-radius: 0.33em;
+  color: #fff;
+  font-size: 16px;
+  text-align: center;
+  font-family: "Inter" , sans-serif;
+  padding: 9.6px 5px;
+  width: 120px;
+  appearance: none;
+}
   

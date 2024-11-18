@@ -15,9 +15,10 @@ h1 {
   background-image: url('https://ezrar9.sg-host.com/wp-content/uploads/2024/01/oie_81451349eN2bfLr.jpg');
   background-size: cover;
   background-repeat: no-repeat;
-  height: 583px;
+  min-height: 100vh;
   padding: 168px;
   background-position: 50% 50%;
+  background-color: #29b6ad;
 }
 
 .front-text {
