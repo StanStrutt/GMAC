@@ -7,18 +7,17 @@ export default function Dropdownlogic() {
 
     const [location, setLocation] = useState("");
 
-    const [age, setAge] = useState("");
+    const [problem, setProblem] = useState("");
 
     const [ageRange, setAgeRange] = useState("");
 
 
-    const handleLocationDropdownChange = (e) => {
-        setLocation(e.target.value);
+    const handleProblemDropdownChange = (e) => {
+        setProblem(e.target.value);
     };
 
-    const handleAgeDropdownChange = (e) => {
-        setAge(e.target.value);
-        setAgeRange("");
+    const handleLocationDropdownChange = (e) => {
+        setLocation(e.target.value);
     };
 
     const handleAgeRangeDropdownChange = (e) => {
@@ -30,9 +29,9 @@ export default function Dropdownlogic() {
     return {
         location,
         ageRange,
-        age,
+        problem,
         handleLocationDropdownChange,
         handleAgeRangeDropdownChange,
-        handleAgeDropdownChange,
+        handleProblemDropdownChange,
     };
 }

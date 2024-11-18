@@ -4,12 +4,27 @@ import Dropdownlogic  from './DropdownLogic';
 
 export default function  Dropdownmenu() {
 
-    const {location, age, ageRange, handleLocationDropdownChange, handleAgeRangeDropdownChange, handleAgeDropdownChange} = Dropdownlogic()
+    const {location, problem, ageRange, handleLocationDropdownChange, handleAgeRangeDropdownChange, handleProblemDropdownChange} = Dropdownlogic()
 
 
     return (
         <div className='dropdowns'>
             <div className='label-holder'>
+                <select id='locationDropdown' value={problem} onChange={handleProblemDropdownChange}>
+                    <option hidden selected value="">Support with?</option>
+                    <option value="Diagnosis">Diagnosis</option>
+                    <option value="Eating">Eating</option>
+                    <option value="Education">Education</option>
+                    <option value="Employment">Employment</option>
+                    <option value="Housing">Housing</option>
+                    <option value="Mental Health">Mental Health</option>
+                    <option value="Sleep">Sleep</option>
+                    <option value="Social Care">Social Care</option>
+                    <option value="Transport">Transport</option>
+                </select>
+            </div>
+            {problem !== "" &&(
+            <div className='label-holder'>              
                 <select id='locationDropdown' value={location} onChange={handleLocationDropdownChange}>
                     <option hidden selected value="">Location</option>
                     <option value="Bolton">Bolton</option>
@@ -24,22 +39,15 @@ export default function  Dropdownmenu() {
                     <option value="Wigan">Wigan</option>
                 </select>
             </div>
-            {location !== "" &&(
-            <div className='label-holder'>              
-                <select id='ageDropdown' value={age} onChange={handleAgeDropdownChange}>
-                    <option hidden selected>Age</option>
-                    <option value="Child">Child</option>
-                    <option value="Adult">Adult</option>
-                </select>
-            </div>
             )}
-            {age === "Child" &&(
+            {location !== "" &&(
                 <div className='label-holder'>
                     <select id='ageRangeDropdown' value={ageRange} onChange={handleAgeRangeDropdownChange}>
-                        <option hidden selected>Age range</option>
+                        <option hidden selected value="">Age</option>
                         <option value="0-4">0-4</option>
                         <option value="5-16">5-16</option>
                         <option value="16+">16+</option>
+                        <option value="Adult">Adult</option>
                     </select>
                 </div>
             )}
