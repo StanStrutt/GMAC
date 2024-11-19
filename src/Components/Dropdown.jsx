@@ -1,16 +1,13 @@
 import './Dropdown.css';
-import Dropdownlogic  from './DropdownLogic';
 
+export default function  Dropdownmenu(props) {
 
-export default function  Dropdownmenu() {
-
-    const {location, problem, ageRange, handleLocationDropdownChange, handleAgeRangeDropdownChange, handleProblemDropdownChange} = Dropdownlogic()
 
 
     return (
         <div className='dropdowns'>
             <div className='label-holder'>
-                <select id='locationDropdown' value={problem} onChange={handleProblemDropdownChange}>
+                <select id='problemDropdown' value={props.problem} onChange={props.handleProblemDropdownChange}>
                     <option hidden selected value="">Support with?</option>
                     <option value="Diagnosis">Diagnosis</option>
                     <option value="Eating">Eating</option>
@@ -23,10 +20,10 @@ export default function  Dropdownmenu() {
                     <option value="Transport">Transport</option>
                 </select>
             </div>
-            {problem !== "" &&(
+            {props.problem !== "" &&(
             <div className='label-holder'>              
-                <select id='locationDropdown' value={location} onChange={handleLocationDropdownChange}>
-                    <option hidden selected value="">Location</option>
+                <select id='locationDropdown' value={props.location} onChange={props.handleLocationDropdownChange}>
+                    <option selected value="">Location?</option>
                     <option value="Bolton">Bolton</option>
                     <option value="Bury">Bury</option>
                     <option value="Manchester">Manchester</option>
@@ -40,25 +37,11 @@ export default function  Dropdownmenu() {
                 </select>
             </div>
             )}
-            {location !== "" &&(
+            {props.location !== "" &&(
                 <div className='label-holder'>
-                    <select id='ageRangeDropdown' value={ageRange} onChange={handleAgeRangeDropdownChange}>
-                        <option hidden selected value="">Age</option>
-                        <option value="0-4">0-4</option>
-                        <option value="5-16">5-16</option>
-                        <option value="16+">16+</option>
-                        <option value="Adult">Adult</option>
-                    </select>
+                    <input placeholder='Age' id='ageRangeDropdown' value={props.ageRange} onChange={props.handleAgeRangeDropdownChange}/>
                 </div>
             )}
-        {/* <div>
-                <h2>Selections:</h2>
-                <p>Location: {location || "None"}</p>
-                <p>Age: {age || "None"}</p>
-                <p>Age range: {ageRange || "None"}</p>
-            </div>  */}
-        </div>      
-
-
+        </div>
     );
 }

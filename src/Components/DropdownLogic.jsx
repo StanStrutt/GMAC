@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState , useEffect} from "react";
 
 
 
@@ -11,6 +11,15 @@ export default function Dropdownlogic() {
 
     const [ageRange, setAgeRange] = useState("");
 
+    const [allInputsCompleted, setallInputsCompleted] = useState(false)
+
+    useEffect(() => {
+        if (location && problem && ageRange) {
+            setallInputsCompleted(true);
+        } else {
+            setallInputsCompleted(false)
+        }
+    }, [problem , location , ageRange]);
 
     const handleProblemDropdownChange = (e) => {
         setProblem(e.target.value);
@@ -30,6 +39,8 @@ export default function Dropdownlogic() {
         location,
         ageRange,
         problem,
+        allInputsCompleted,
+        setallInputsCompleted,
         handleLocationDropdownChange,
         handleAgeRangeDropdownChange,
         handleProblemDropdownChange,
