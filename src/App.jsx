@@ -3,10 +3,14 @@ import Dropdownmenu from './Components/Dropdown';
 import Dropdownlogic from './Components/DropdownLogic';
 import DropContext from './Components/Dropcontext';
 import InfoCards from './Components/Infocards';
+import InputTimer from './Components/inputtimer';
+
 
 function App() {
 
-  const {location, problem, ageRange, allInputsCompleted, handleLocationDropdownChange, handleAgeRangeDropdownChange, handleProblemDropdownChange, } = Dropdownlogic()
+  const {location, problem, ageRange, allInputsCompleted, handleLocationDropdownChange, handleAgeRangeDropdownChange, handleProblemDropdownChange} = Dropdownlogic()
+
+  const delayedCondition = InputTimer(allInputsCompleted, 10)
 
   return (
     <div className="App">

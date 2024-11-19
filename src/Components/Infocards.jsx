@@ -1,9 +1,6 @@
 import "./Infocards.css"
 
 export default function InfoCards(props) {
-
-
-
     return(
         <div className="cards">
             {props.input &&(
