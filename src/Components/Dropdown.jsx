@@ -23,7 +23,7 @@ export default function  Dropdownmenu(props) {
             {props.problem !== "" &&(
             <div className='label-holder'>              
                 <select id='locationDropdown' value={props.location} onChange={props.handleLocationDropdownChange}>
-                    <option selected value="">Location?</option>
+                    <option hidden selected value="">Location?</option>
                     <option value="Bolton">Bolton</option>
                     <option value="Bury">Bury</option>
                     <option value="Manchester">Manchester</option>
@@ -39,7 +39,7 @@ export default function  Dropdownmenu(props) {
             )}
             {props.location !== "" &&(
                 <div className='label-holder'>
-                    <input placeholder='Age' id='ageRangeDropdown' value={props.ageRange} onChange={props.handleAgeRangeDropdownChange}/>
+                    <input type='number' placeholder='Age' id='ageRangeDropdown' value={props.ageRange} onChange={props.handleAgeRangeDropdownChange}/>
                 </div>
             )}
         </div>

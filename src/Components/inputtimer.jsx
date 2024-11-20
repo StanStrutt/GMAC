@@ -1,24 +1,32 @@
 import { useState, useEffect } from "react";
+import InfoCards from "./Infocards";
+import "./Infocards.css"
 
 
 
-export default function InputTimer({allInputsCompleted}) {
+export default function InputTimer(props) {
 
 
-
-const [shouldRender, setShouldRender] = useState(false);
+  const [isDelayed, setIsDelayed] = useState(false);
 
 useEffect(() => {
-    let timeout;
-    if (allInputsCompleted) {
-      timeout = setTimeout(() => {
-        setShouldRender(true);
-      }, 2000);
-    } else {
-      setShouldRender(false);
-      clearTimeout(timeout);
-    }
+    const timeoutId = setTimeout(() => {
+      setIsDelayed(props.input);
+    }, 500);
 
-    return () => clearTimeout(timeout);
-  }, [allInputsCompleted]);
+    return () => clearTimeout(timeoutId);
+  }, )
+
+  return(
+    <div>
+      {isDelayed &&(
+      <div className="Info-cards">
+        <InfoCards input={props.input} problem={props.problem}/>
+        <InfoCards input={props.input} location={props.location}/>
+        <InfoCards input={props.input} ageRange={props.ageRange}/>
+      </div>
+      )}
+    </div>
+  )
 }
+

@@ -1,7 +1,15 @@
+.Info-cards {
+    color: #fff;
+    display: flex;
+    flex-direction: row;
+  }
+
 
 .card {
     background-color: #7d3e8b;
     margin: 10px;
     border: 1px;
     border-radius: 0.33em; 
+    height: 400px;
+    box-shadow: 0 20px 8px 0 rgba(0,0,0,0.2);
 }
