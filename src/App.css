@@ -16,24 +16,25 @@ h1 {
   background-size: cover;
   background-repeat: no-repeat;
   min-height: 100vh;
-  padding: 50px;
   background-position: 50% 50%;
   background-color: #29b6ad;
+  display: flex;
+  align-items: center;
 }
 
 .fifty-fifty{
   display: flex;
-  padding: 118px 118px 118px 118px;
+  padding: 114px;
 }
 
 .front-text {
   display: flex;
   color: white;
   flex-wrap: nowrap;
-  justify-content: space-between;
   padding: 0 24px;
   flex-direction: column;
   flex-basis: 50%;
+
 }
 
 .front-spacer {
@@ -59,4 +60,9 @@ h1 {
   color: #fff;
   display: flex;
   flex-direction: row;
+}
+
+.pseudo-footer {
+  background-color: #29b6ad;
+  padding: 20px 130px;
 }

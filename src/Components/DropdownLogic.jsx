@@ -31,9 +31,7 @@ export default function Dropdownlogic() {
 
     const handleAgeRangeDropdownChange = (e) => {
         setAgeRange(e.target.value);
-    };
-
-
+    }
 
     return {
         location,

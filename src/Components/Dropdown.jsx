@@ -1,9 +1,8 @@
 import './Dropdown.css';
 
+
+
 export default function  Dropdownmenu(props) {
-
-
-
     return (
         <div className='dropdowns'>
             <div className='label-holder'>
@@ -39,7 +38,7 @@ export default function  Dropdownmenu(props) {
             )}
             {props.location !== "" &&(
                 <div className='label-holder'>
-                    <input type='number' placeholder='Age' id='ageRangeDropdown' value={props.ageRange} onChange={props.handleAgeRangeDropdownChange}/>
+                    <input type="number" placeholder='Age' id='ageRangeDropdown' value={props.ageRange} onChange={props.handleAgeRangeDropdownChange}/>
                 </div>
             )}
         </div>

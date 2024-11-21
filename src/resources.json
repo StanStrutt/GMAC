@@ -1,0 +1,678 @@
+[
+    {
+        "id": "1",
+        "title": "Service AA",
+        "description": "Quisque lacinia et velit vitae interdum.",
+        "categories": [
+            "Diagnosis",
+            "Mental Health"
+        ],
+        "contact": {
+            "address": null,
+            "email": null,
+            "phoneNumber": "0161 345 6789",
+            "website": "https://example-aa.com"
+        },
+        "appliesTo": {
+            "areas": [
+                "Manchester",
+                "Trafford",
+                "Wigan"
+            ],
+            "minAge": null,
+            "maxAge": 4
+        }
+    },
+    {
+        "id": "2",
+        "title": "Service AB",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque lacinia et velit vitae interdum.",
+        "categories": [
+            "Mental Health",
+            "Diagnosis",
+            "Education"
+        ],
+        "contact": {
+            "address": null,
+            "email": "ab@example.com",
+            "phoneNumber": null,
+            "website": "https://example-ab.com"
+        },
+        "appliesTo": {
+            "areas": [
+                "Rochdale",
+                "Tameside",
+                "Trafford",
+                "Bolton",
+                "Wigan"
+            ],
+            "minAge": null,
+            "maxAge": 4
+        }
+    },
+    {
+        "id": "3",
+        "title": "Service AC",
+        "description": "Quisque lacinia et velit vitae interdum.",
+        "categories": [
+            "Diagnosis"
+        ],
+        "contact": {
+            "address": null,
+            "email": null,
+            "phoneNumber": "0161 345 6789",
+            "website": "https://example-ac.com"
+        },
+        "appliesTo": {
+            "areas": [
+                "Stockport"
+            ],
+            "minAge": null,
+            "maxAge": null
+        }
+    },
+    {
+        "id": "4",
+        "title": "Service AD",
+        "description": "Quisque lacinia et velit vitae interdum.",
+        "categories": [
+            "Housing",
+            "Eating",
+            "Diagnosis"
+        ],
+        "contact": {
+            "address": null,
+            "email": "ad@example.com",
+            "phoneNumber": null,
+            "website": null
+        },
+        "appliesTo": {
+            "areas": [
+                "Bury"
+            ],
+            "minAge": null,
+            "maxAge": null
+        }
+    },
+    {
+        "id": "5",
+        "title": "Service AE",
+        "description": "Lorem ipsum dolor sit amet.",
+        "categories": [
+            "Eating"
+        ],
+        "contact": {
+            "address": null,
+            "email": "ae@example.com",
+            "phoneNumber": "0161 345 6789",
+            "website": "https://example-ae.com"
+        },
+        "appliesTo": {
+            "areas": [
+                "Wigan",
+                "Oldham",
+                "Tameside"
+            ],
+            "minAge": null,
+            "maxAge": null
+        }
+    },
+    {
+        "id": "6",
+        "title": "Service AF",
+        "description": "Lorem ipsum dolor sit amet.",
+        "categories": [
+            "Transport",
+            "Housing",
+            "Eating"
+        ],
+        "contact": {
+            "address": {
+                "line1": "Holyoake House",
+                "line2": "Hanover Street",
+                "city": "Manchester",
+                "country": "United Kingdom",
+                "postcode": "M60 0AS"
+            },
+            "email": null,
+            "phoneNumber": null,
+            "website": null
+        },
+        "appliesTo": {
+            "areas": [
+                "Bury"
+            ],
+            "minAge": 18,
+            "maxAge": null
+        }
+    },
+    {
+        "id": "7",
+        "title": "Service AG",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque lacinia et velit vitae interdum.",
+        "categories": [
+            "Education",
+            "Eating"
+        ],
+        "contact": {
+            "address": {
+                "line1": "Holyoake House",
+                "line2": "Hanover Street",
+                "city": "Manchester",
+                "country": "United Kingdom",
+                "postcode": "M60 0AS"
+            },
+            "email": "ag@example.com",
+            "phoneNumber": "0161 345 6789",
+            "website": "https://example-ag.com"
+        },
+        "appliesTo": {
+            "areas": [
+                "Oldham"
+            ],
+            "minAge": null,
+            "maxAge": null
+        }
+    },
+    {
+        "id": "8",
+        "title": "Service AH",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        "categories": [
+            "Social Care"
+        ],
+        "contact": {
+            "address": null,
+            "email": "ah@example.com",
+            "phoneNumber": "0161 345 6789",
+            "website": "https://example-ah.com"
+        },
+        "appliesTo": {
+            "areas": [
+                "Manchester"
+            ],
+            "minAge": null,
+            "maxAge": null
+        }
+    },
+    {
+        "id": "9",
+        "title": "Service AI",
+        "description": "Quisque lacinia et velit vitae interdum.",
+        "categories": [
+            "Employment",
+            "Sleep"
+        ],
+        "contact": {
+            "address": {
+                "line1": "Holyoake House",
+                "line2": "Hanover Street",
+                "city": "Manchester",
+                "country": "United Kingdom",
+                "postcode": "M60 0AS"
+            },
+            "email": "ai@example.com",
+            "phoneNumber": null,
+            "website": "https://example-ai.com"
+        },
+        "appliesTo": {
+            "areas": [
+                "Manchester",
+                "Wigan",
+                "Trafford",
+                "Oldham",
+                "Salford"
+            ],
+            "minAge": 16,
+            "maxAge": null
+        }
+    },
+    {
+        "id": "10",
+        "title": "Service AJ",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        "categories": [
+            "Sleep"
+        ],
+        "contact": {
+            "address": null,
+            "email": null,
+            "phoneNumber": "0161 345 6789",
+            "website": "https://example-aj.com"
+        },
+        "appliesTo": {
+            "areas": [
+                "Tameside",
+                "Salford",
+                "Oldham",
+                "Manchester",
+                "Trafford"
+            ],
+            "minAge": null,
+            "maxAge": 4
+        }
+    },
+    {
+        "id": "11",
+        "title": "Service AK",
+        "description": "Lorem ipsum dolor sit amet.",
+        "categories": [
+            "Transport"
+        ],
+        "contact": {
+            "address": null,
+            "email": "ak@example.com",
+            "phoneNumber": null,
+            "website": "https://example-ak.com"
+        },
+        "appliesTo": {
+            "areas": [
+                "Rochdale",
+                "Manchester",
+                "Trafford",
+                "Oldham",
+                "Bolton"
+            ],
+            "minAge": 16,
+            "maxAge": null
+        }
+    },
+    {
+        "id": "13",
+        "title": "Service AM",
+        "description": "Lorem ipsum dolor sit amet.",
+        "categories": [
+            "Sleep"
+        ],
+        "contact": {
+            "address": null,
+            "email": "am@example.com",
+            "phoneNumber": null,
+            "website": null
+        },
+        "appliesTo": {
+            "areas": [
+                "Bolton"
+            ],
+            "minAge": 16,
+            "maxAge": null
+        }
+    },
+    {
+        "id": "14",
+        "title": "Service AN",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque lacinia et velit vitae interdum.",
+        "categories": [
+            "Transport"
+        ],
+        "contact": {
+            "address": {
+                "line1": "Holyoake House",
+                "line2": "Hanover Street",
+                "city": "Manchester",
+                "country": "United Kingdom",
+                "postcode": "M60 0AS"
+            },
+            "email": null,
+            "phoneNumber": "0161 345 6789",
+            "website": "https://example-an.com"
+        },
+        "appliesTo": {
+            "areas": [
+                "Rochdale",
+                "Bury",
+                "Oldham",
+                "Wigan",
+                "Bolton",
+                "Manchester",
+                "Stockport",
+                "Trafford",
+                "Tameside",
+                "Salford"
+            ],
+            "minAge": null,
+            "maxAge": null
+        }
+    },
+    {
+        "id": "15",
+        "title": "Service AO",
+        "description": "Lorem ipsum dolor sit amet.",
+        "categories": [
+            "Employment",
+            "Diagnosis"
+        ],
+        "contact": {
+            "address": null,
+            "email": "ao@example.com",
+            "phoneNumber": "0161 345 6789",
+            "website": "https://example-ao.com"
+        },
+        "appliesTo": {
+            "areas": [
+                "Wigan"
+            ],
+            "minAge": 18,
+            "maxAge": null
+        }
+    },
+    {
+        "id": "16",
+        "title": "Service AP",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        "categories": [
+            "Diagnosis"
+        ],
+        "contact": {
+            "address": {
+                "line1": "Holyoake House",
+                "line2": "Hanover Street",
+                "city": "Manchester",
+                "country": "United Kingdom",
+                "postcode": "M60 0AS"
+            },
+            "email": "ap@example.com",
+            "phoneNumber": null,
+            "website": "https://example-ap.com"
+        },
+        "appliesTo": {
+            "areas": [
+                "Bolton",
+                "Tameside",
+                "Salford",
+                "Wigan",
+                "Bury"
+            ],
+            "minAge": 18,
+            "maxAge": null
+        }
+    },
+    {
+        "id": "17",
+        "title": "Service AQ",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque lacinia et velit vitae interdum.",
+        "categories": [
+            "Mental Health",
+            "Employment"
+        ],
+        "contact": {
+            "address": {
+                "line1": "Holyoake House",
+                "line2": "Hanover Street",
+                "city": "Manchester",
+                "country": "United Kingdom",
+                "postcode": "M60 0AS"
+            },
+            "email": "aq@example.com",
+            "phoneNumber": null,
+            "website": "https://example-aq.com"
+        },
+        "appliesTo": {
+            "areas": [
+                "Rochdale"
+            ],
+            "minAge": 5,
+            "maxAge": 16
+        }
+    },
+    {
+        "id": "18",
+        "title": "Service AR",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        "categories": [
+            "Mental Health",
+            "Social Care"
+        ],
+        "contact": {
+            "address": {
+                "line1": "Holyoake House",
+                "line2": "Hanover Street",
+                "city": "Manchester",
+                "country": "United Kingdom",
+                "postcode": "M60 0AS"
+            },
+            "email": "ar@example.com",
+            "phoneNumber": "0161 345 6789",
+            "website": "https://example-ar.com"
+        },
+        "appliesTo": {
+            "areas": [
+                "Rochdale",
+                "Salford",
+                "Oldham",
+                "Trafford",
+                "Bolton",
+                "Manchester",
+                "Bury",
+                "Stockport",
+                "Wigan",
+                "Tameside"
+            ],
+            "minAge": 18,
+            "maxAge": null
+        }
+    },
+    {
+        "id": "19",
+        "title": "Service AS",
+        "description": "Lorem ipsum dolor sit amet.",
+        "categories": [
+            "Sleep"
+        ],
+        "contact": {
+            "address": {
+                "line1": "Holyoake House",
+                "line2": "Hanover Street",
+                "city": "Manchester",
+                "country": "United Kingdom",
+                "postcode": "M60 0AS"
+            },
+            "email": null,
+            "phoneNumber": "0161 345 6789",
+            "website": null
+        },
+        "appliesTo": {
+            "areas": [
+                "Stockport"
+            ],
+            "minAge": 18,
+            "maxAge": null
+        }
+    },
+    {
+        "id": "20",
+        "title": "Service AT",
+        "description": "Quisque lacinia et velit vitae interdum.",
+        "categories": [
+            "Mental Health",
+            "Sleep"
+        ],
+        "contact": {
+            "address": null,
+            "email": null,
+            "phoneNumber": "0161 345 6789",
+            "website": "https://example-at.com"
+        },
+        "appliesTo": {
+            "areas": [
+                "Salford"
+            ],
+            "minAge": 5,
+            "maxAge": 16
+        }
+    },
+    {
+        "id": "21",
+        "title": "Service AU",
+        "description": "Quisque lacinia et velit vitae interdum.",
+        "categories": [
+            "Sleep"
+        ],
+        "contact": {
+            "address": {
+                "line1": "Holyoake House",
+                "line2": "Hanover Street",
+                "city": "Manchester",
+                "country": "United Kingdom",
+                "postcode": "M60 0AS"
+            },
+            "email": "au@example.com",
+            "phoneNumber": null,
+            "website": null
+        },
+        "appliesTo": {
+            "areas": [
+                "Wigan",
+                "Stockport",
+                "Manchester",
+                "Salford",
+                "Bury"
+            ],
+            "minAge": 16,
+            "maxAge": null
+        }
+    },
+    {
+        "id": "22",
+        "title": "Service AV",
+        "description": "Quisque lacinia et velit vitae interdum.",
+        "categories": [
+            "Social Care"
+        ],
+        "contact": {
+            "address": null,
+            "email": null,
+            "phoneNumber": "0161 345 6789",
+            "website": "https://example-av.com"
+        },
+        "appliesTo": {
+            "areas": [
+                "Stockport"
+            ],
+            "minAge": 5,
+            "maxAge": 16
+        }
+    },
+    {
+        "id": "23",
+        "title": "Service AW",
+        "description": "Quisque lacinia et velit vitae interdum.",
+        "categories": [
+            "Employment",
+            "Housing",
+            "Eating"
+        ],
+        "contact": {
+            "address": null,
+            "email": "aw@example.com",
+            "phoneNumber": null,
+            "website": "https://example-aw.com"
+        },
+        "appliesTo": {
+            "areas": [
+                "Stockport"
+            ],
+            "minAge": 16,
+            "maxAge": 18
+        }
+    },
+    {
+        "id": "24",
+        "title": "Service AX",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque lacinia et velit vitae interdum.",
+        "categories": [
+            "Transport",
+            "Employment",
+            "Diagnosis"
+        ],
+        "contact": {
+            "address": {
+                "line1": "Holyoake House",
+                "line2": "Hanover Street",
+                "city": "Manchester",
+                "country": "United Kingdom",
+                "postcode": "M60 0AS"
+            },
+            "email": null,
+            "phoneNumber": null,
+            "website": "https://example-ax.com"
+        },
+        "appliesTo": {
+            "areas": [
+                "Wigan",
+                "Salford",
+                "Bolton",
+                "Tameside",
+                "Stockport",
+                "Manchester",
+                "Rochdale",
+                "Bury",
+                "Trafford",
+                "Oldham"
+            ],
+            "minAge": null,
+            "maxAge": null
+        }
+    },
+    {
+        "id": "25",
+        "title": "Service AY",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque lacinia et velit vitae interdum.",
+        "categories": [
+            "Sleep"
+        ],
+        "contact": {
+            "address": null,
+            "email": null,
+            "phoneNumber": "0161 345 6789",
+            "website": "https://example-ay.com"
+        },
+        "appliesTo": {
+            "areas": [
+                "Salford",
+                "Oldham",
+                "Bury",
+                "Rochdale",
+                "Manchester",
+                "Stockport",
+                "Trafford",
+                "Tameside",
+                "Wigan",
+                "Bolton"
+            ],
+            "minAge": 16,
+            "maxAge": 18
+        }
+    },
+    {
+        "id": "26",
+        "title": "Service AZ",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque lacinia et velit vitae interdum.",
+        "categories": [
+            "Education",
+            "Sleep",
+            "Eating"
+        ],
+        "contact": {
+            "address": {
+                "line1": "Holyoake House",
+                "line2": "Hanover Street",
+                "city": "Manchester",
+                "country": "United Kingdom",
+                "postcode": "M60 0AS"
+            },
+            "email": "az@example.com",
+            "phoneNumber": "0161 345 6789",
+            "website": null
+        },
+        "appliesTo": {
+            "areas": [
+                "Stockport",
+                "Trafford",
+                "Bury"
+            ],
+            "minAge": 5,
+            "maxAge": 16
+        }
+    }
+]
