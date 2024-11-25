@@ -1,25 +1,22 @@
 import "./Infocards.css"
-
+import resources from "../resources.json"
 
 export default function InfoCards(props) {
 
-    
-
-    return(
+    {filteredResults.length > 0 && (
         <div className="cards"> 
-            {props.input &&(
-            <div className="card">
+        {filteredResults.map((resource) => (
+            <div key={resource.id} className="card">
                 <div className="card-text-image">
                     <img src={props.source} alt="" />
-                    <h1>{props.problem} {props.location} {props.ageRange}</h1>
-                    <p>card content card content card content card content card content card content card content card content</p>
+                    <h1>{resource.title}</h1>
+                    <p>{resource.description}</p>
                     <hr/>
                 </div>
                 <div className="card-resources">
-                    <ul>{props.mapped}</ul>
+                    <ul>{resource.contact}</ul>
                 </div>
             </div>
-            )}
-        </div>
-    );
-}
+        ))}
+    </div>
+})
