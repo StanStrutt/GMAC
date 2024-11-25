@@ -57,12 +57,12 @@ h1 {
 }
 
 .Info-cards {
-  color: #fff;
+  color: #000;
   display: flex;
   flex-direction: row;
 }
 
 .pseudo-footer {
   background-color: #29b6ad;
-  padding: 20px 130px;
+  padding: 0 134px;
 }

@@ -1,6 +1,10 @@
 import "./Infocards.css"
 
+
 export default function InfoCards(props) {
+
+    
+
     return(
         <div className="cards"> 
             {props.input &&(
@@ -12,7 +16,7 @@ export default function InfoCards(props) {
                     <hr/>
                 </div>
                 <div className="card-resources">
-                    <p>card resources card resources card resources card resources card resources card resources card resources card resources </p>
+                    <ul>{props.mapped}</ul>
                 </div>
             </div>
             )}
