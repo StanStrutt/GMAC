@@ -20,11 +20,11 @@ const InfoCards = (props) => {
                 </div>
                 <div className="card-resources">
                     <div className="resource-details">
-                        <p>{safeValue(resource.contact?.website)}</p>
+                        <p>{safeValue(resource.contact?.phoneNumber)}</p>
                         <div className="detail-spacer"/>
                         <p>{safeValue(resource.contact?.email)}</p>
                         <div className="detail-spacer"/>
-                        <p>{safeValue(resource.contact?.phoneNumber)}</p>
+                        <p>{safeValue(resource.contact?.website)}</p>
                         <div className="detail-spacer"/>
                     </div>
                     <div className="resource-address">

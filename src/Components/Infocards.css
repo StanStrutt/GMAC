@@ -1,18 +1,23 @@
 
 .cards {
   display: flex;
-  max-width: 100%;
-  min-width: 33.33%;
+  flex-direction: row;
+  flex-wrap: wrap;
+  box-sizing: border-box;
 }
 
 .card {
   background-color: #fff;
-  margin: 40px 20px 20px 20px;
+
   border: 1px;
   border-radius: 0.33em; 
   box-shadow: 0 20px 8px 0 rgba(0,0,0,0.2);
   display: flex;
   flex-direction: column;
+  flex: 1 1 calc(33.33% - 21px);
+  max-width: calc(33.33% - 21px); 
+  min-width: 1%; 
+  box-sizing: border-box;
 }
 
 .card-text-image {
@@ -24,13 +29,13 @@
   display: flex;
   flex-direction: column;
   flex-basis: 50%;
-
-
   max-height: auto;
+  max-width: 500px;
+  align-items: stretch;
 }
 
 hr {
-  border: 1px solid #000;
+  border: 1px solid grey;
   width: 100%;
   margin: 0;
 }
