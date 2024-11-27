@@ -5,7 +5,6 @@ import InfoCards from './Components/Infocards';
 
 
 
-
 export default function App() {
 
   const {location, problem, ageRange, filteredResults, handleLocationDropdownChange, handleAgeRangeDropdownChange, handleProblemDropdownChange,} = Dropdownlogic()

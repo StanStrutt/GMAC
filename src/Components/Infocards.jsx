@@ -1,14 +1,15 @@
 import "./Infocards.css"
+import { Fade } from 'react-awesome-reveal';
 
 
-
-const InfoCards = (props) => {
+export default function InfoCards(props) {
 
     const safeValue = (value) => value || "";
 
     if (props.filteredResults.length === 0) return null;
 
     return(
+        <Fade cascade>
         <div className="cards"> 
         {props.filteredResults.map((resource) => (
             <div key={resource.id} className="card">
@@ -38,8 +39,8 @@ const InfoCards = (props) => {
             </div>
         ))}
     </div>
-    )}
+    </Fade>
+)}
 
 
 
-export default InfoCards

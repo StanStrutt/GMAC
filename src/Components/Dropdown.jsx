@@ -12,8 +12,11 @@ export default function  Dropdownmenu(props) {
                 <select id='problemDropdown' value={props.problem} onChange={props.handleProblemDropdownChange}>
                     <option hidden selected value="">Support with?</option>
                     {Array.from(
-                        new Set(resources.flatMap((resource) => resource.categories))
-                    ).map ((category, index) => (
+                        new Set(resources.flatMap((resource) => resource.categories)
+                    )
+                    )
+                    .sort((a, b) => a.localeCompare(b))
+                    .map ((category, index) => (
                         <option key={index} value={category}>
                             {category}
                         </option>
@@ -25,8 +28,11 @@ export default function  Dropdownmenu(props) {
                 <select id='locationDropdown' value={props.location} onChange={props.handleLocationDropdownChange}>
                     <option hidden selected value="">Location?</option>
                     {Array.from(
-                        new Set(resources.flatMap((resource) => resource.appliesTo.areas))
-                    ).map ((area, index) => (
+                        new Set(resources.flatMap((resource) => resource.appliesTo.areas)
+                    )
+                    )
+                    .sort((a, b) => a.localeCompare(b))
+                    .map ((area, index) => (
                         <option key={index} value={area}>
                             {area}
                         </option>
