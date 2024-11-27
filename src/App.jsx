@@ -38,10 +38,8 @@ export default function App() {
         </div>
       </div>
       <div className='pseudo-footer'>
-        <div className='Info-card-holder'>
-          <div className="Info-cards">
-            <InfoCards filteredResults={filteredResults} problem={problem} source="https://fastly.picsum.photos/id/957/500/150.jpg?hmac=1oWQd-RpDaQrNgGxB7jnzFzAHwsf_IFrUFcOIVrGQwo"/>
-          </div>
+        <div className="Info-cards">
+          <InfoCards filteredResults={filteredResults} problem={problem} source="https://fastly.picsum.photos/id/957/500/150.jpg?hmac=1oWQd-RpDaQrNgGxB7jnzFzAHwsf_IFrUFcOIVrGQwo"/>
         </div>
       </div>
     </div>
