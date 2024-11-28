@@ -15,18 +15,19 @@ export default function InfoCards(props) {
             <div key={resource.id} className="card">
                 <div className="card-text-image">
                     <img src={props.source} alt="" />
-                    <h1>{safeValue(resource.title)}</h1>
-                    <p>{safeValue(resource.description)}</p>
-                    <hr/>
+                    <div className="card-text">
+                        <h1>{safeValue(resource.title)}</h1>
+                        <div className="card-p">
+                            <p>{safeValue(resource.description)}</p>
+                        </div>
+                    </div>
                 </div>
                 <div className="card-resources">
+                    <hr/>
                     <div className="resource-details">
                         <p>{safeValue(resource.contact?.phoneNumber)}</p>
-                        <div className="detail-spacer"/>
-                        <p>{safeValue(resource.contact?.email)}</p>
-                        <div className="detail-spacer"/>
-                        <p>{safeValue(resource.contact?.website)}</p>
-                        <div className="detail-spacer"/>
+                        <p>{safeValue(resource.contact?.email)}</p>                     
+                        <p>{safeValue(resource.contact?.website)}</p>                       
                     </div>
                     <div className="resource-address">
                         <p>{safeValue(resource.contact.address?.line1)}</p>

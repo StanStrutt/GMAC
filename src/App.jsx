@@ -38,7 +38,7 @@ export default function App() {
       </div>
       <div className='pseudo-footer'>
         <div className="Info-cards">
-          <InfoCards filteredResults={filteredResults} problem={problem} source="https://fastly.picsum.photos/id/957/500/150.jpg?hmac=1oWQd-RpDaQrNgGxB7jnzFzAHwsf_IFrUFcOIVrGQwo"/>
+          <InfoCards filteredResults={filteredResults} problem={problem} source="https://fastly.picsum.photos/id/1002/800/400.jpg?hmac=aiLg5Y1Yk9qfv2bgkITz9jCoUP_NirxrP6E4n5FED2Y"/>
         </div>
       </div>
     </div>

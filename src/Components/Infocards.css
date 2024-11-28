@@ -21,15 +21,34 @@
   display: flex;
   flex-direction: column;
   text-align: center;
-  height: 300px;
 }
 
 .card-text-image img {
   display: flex;
   flex-direction: column;
-  flex-basis: 50%;
-  max-height: auto;
   align-items: stretch;
+}
+
+.card-text p {
+  margin: 0;
+  margin-bottom: 5px;
+}
+
+.card-text h1 {
+  margin: 0;
+  margin: 5px 0;
+
+}
+
+.card-p {
+  align-content: space-between;
+  display: flex;
+}
+
+.card-text {
+  height: 150px;
+  display: flex;
+  flex-direction: column;
 }
 
 hr {
@@ -40,7 +59,7 @@ hr {
 .card-resources {
   display: flex;
   flex-direction: column;
-  height: 100%;
+  height: 300px;
 }
 
 .card-resources p {
@@ -69,4 +88,21 @@ hr {
 
 .resource-address p {
   margin: 0 0 10px 0;
+}
+
+
+@media (max-width: 768px) {
+  .card-resources {
+    height: 200px !important;
+  }
+  .card-text-image h1{
+    margin-bottom: 0 !important;
+    font-size: 20px;
+  }
+  .card-text-image p {
+    font-size: 15px;
+  }
+  .card-text {
+    height: 100px !important;
+  }
 }
