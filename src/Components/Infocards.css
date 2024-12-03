@@ -20,7 +20,6 @@
 .card-text-image {
   display: flex;
   flex-direction: column;
-  text-align: center;
 }
 
 .card-text-image img {
@@ -37,18 +36,12 @@
 .card-text h1 {
   margin: 0;
   margin: 5px 0;
-
-}
-
-.card-p {
-  align-content: space-between;
-  display: flex;
+  padding-top: 4%;
 }
 
 .card-text {
   height: 150px;
-  display: flex;
-  flex-direction: column;
+  padding-left: 9%;
 }
 
 hr {
@@ -68,9 +61,10 @@ hr {
 
 .resource-details {
   display: flex;
-  align-items: center;
-  flex: 0 0 auto;
   flex-direction: column;
+  justify-content: space-evenly;
+  height: 150px;
+  padding-left: 9%;
 }
 
 .detail-spacer {
@@ -79,15 +73,19 @@ hr {
   max-height: 32px;
 }
 
-
 .resource-address {
-  align-items: center;
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
+  padding-left: 9%;
 }
 
 .resource-address p {
   margin: 0 0 10px 0;
+  padding: 1%;
+}
+
+.card-resources img{
+  padding-right: 3% ;
 }
 
 
