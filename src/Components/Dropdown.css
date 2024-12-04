@@ -24,9 +24,30 @@
   text-align: center;
   font-family: "Inter" , sans-serif;
   padding: 9.6px 5px;
-  width: 120px;
+  width: 100px;
 }
   
 
+@media (max-width: 376px) {
+  .label-holder select {
+    font-size: 14px;
+    padding: 4px 2px;
+    margin-right: 10px;
+    height: 37px;
+  }
+  .label-holder input {
+    font-size: 14px;
+    height: 14px;
+  }
+}
+
+@media (max-width: 321px) {
+  .label-holder select {
+    width: 105px;
+  }
+  .label-holder input {
+    width: 70px;
+  }
+}
 
 

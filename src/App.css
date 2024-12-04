@@ -77,9 +77,36 @@ h1 {
     padding: 30px 0;
   }
   .label-holder input {
-    width: 90px !important;
+    width: 90px;
   }
   .pseudo-footer {
     padding: 0 12px;
+  }
+}
+
+@media (max-width: 426px) {
+  .front-text {
+    flex-basis: 90%;
+  }
+  .front-spacer {
+    padding: 0 8px;
+  }
+  .pseudo-footer {
+    padding: 0;
+  }
+}
+
+@media (max-width: 376px) {
+  .front-body p{
+    font-size: 14px;
+  }
+  .front-text {
+    flex-basis: 100%;
+  }
+}
+
+@media (max-width: 321px) {
+  .front-spacer {
+    padding: 0 3px;
   }
 }
