@@ -2,7 +2,7 @@ import './App.css';
 import Dropdownmenu from './Components/Dropdown';
 import Dropdownlogic from './Components/DropdownLogic';
 import InfoCards from './Components/Infocards';
-import { Fade } from 'react-awesome-reveal';
+
 
 
 export default function App() {
@@ -38,9 +38,7 @@ export default function App() {
       </div>
       <div className='pseudo-footer'>
         <div className="Info-cards">
-          <Fade cascade damping={1}>
-            <InfoCards filteredResults={filteredResults} source="https://fastly.picsum.photos/id/1002/800/400.jpg?hmac=aiLg5Y1Yk9qfv2bgkITz9jCoUP_NirxrP6E4n5FED2Y"/> 
-          </Fade>
+          <InfoCards filteredResults={filteredResults} source="https://fastly.picsum.photos/id/1002/800/400.jpg?hmac=aiLg5Y1Yk9qfv2bgkITz9jCoUP_NirxrP6E4n5FED2Y"/> 
         </div>
       </div>
     </div>
