@@ -5,10 +5,7 @@ export default function InfoCards(props) {
 
     const safeValue = (value) => value || ""
 
-    
-
     if (props.filteredResults.length === 0) return null;
-
 
     return(
         <div className="cards"> 

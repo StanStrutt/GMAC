@@ -16,11 +16,11 @@ export default function App() {
         window.scrollTo({
           top: window.innerHeight + 1,
           left: 0,
-          behaviour: "smooth, !important"})
-      }, 1000)
-    }
-  }
-  scrollOnComplete()
+          behaviour: "smooth"})
+      }, 800);
+    }}
+  
+    scrollOnComplete()
 
   return (
     <div className="App">
