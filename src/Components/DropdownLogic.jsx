@@ -43,6 +43,8 @@ export default function Dropdownlogic() {
       setAgeRange(e.target.value);
     }
 
+
+
     return {
         location,
         ageRange,

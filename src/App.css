@@ -1,3 +1,8 @@
+* , html {
+  scroll-behavior: smooth !important;
+}
+
+
 body {
   line-height: 1.2;
   font-family: "Inter" , sans-serif;

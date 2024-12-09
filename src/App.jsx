@@ -7,9 +7,20 @@ import InfoCards from './Components/Infocards';
 
 export default function App() {
 
-  const {location, problem, ageRange, filteredResults, handleLocationDropdownChange, handleAgeRangeDropdownChange, handleProblemDropdownChange,} = Dropdownlogic()
+  const {location, problem, ageRange, filteredResults, handleLocationDropdownChange, handleAgeRangeDropdownChange, handleProblemDropdownChange} = Dropdownlogic()
 
 
+  const scrollOnComplete = () => {
+    if (filteredResults) {
+      setTimeout(() => {
+        window.scrollTo({
+          top: window.innerHeight + 1,
+          left: 0,
+          behaviour: "smooth, !important"})
+      }, 1000)
+    }
+  }
+  scrollOnComplete()
 
   return (
     <div className="App">
