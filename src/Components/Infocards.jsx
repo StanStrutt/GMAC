@@ -10,7 +10,7 @@ export default function InfoCards(props) {
     return(
         <div className="cards"> 
             {props.filteredResults.map((resource) => (
-                <Fade key={resource.id} className="card">
+                <Fade key={resource.id} className="card" ref={props.observedRef}>
                     <div>
                         <div className="card-text-image">
                             <img src={props.source} alt="" />

@@ -2,13 +2,11 @@ import './App.css';
 import Dropdownmenu from './Components/Dropdown';
 import Dropdownlogic from './Components/DropdownLogic';
 import InfoCards from './Components/Infocards';
-
-
+import FAB from "./Components/FAB"
 
 export default function App() {
 
   const {location, problem, ageRange, filteredResults, handleLocationDropdownChange, handleAgeRangeDropdownChange, handleProblemDropdownChange} = Dropdownlogic()
-
 
   const scrollOnComplete = () => {
     if (filteredResults) {
@@ -38,7 +36,7 @@ export default function App() {
                 </div>
                 <div className='drop-down'>
                   <Dropdownmenu problem={problem} location={location} ageRange={ageRange} 
-                  handleProblemDropdownChange={handleProblemDropdownChange} 
+                  handleProblemDropdownChange={handleProblemDropdownChange}
                   handleLocationDropdownChange={handleLocationDropdownChange}
                   handleAgeRangeDropdownChange={handleAgeRangeDropdownChange}/>
                 </div>
@@ -47,9 +45,11 @@ export default function App() {
           </div>
         </div>
       </div>
-      <div className='pseudo-footer'>
+      <div className='pseudo-footer'>       
+        <FAB />
         <div className="Info-cards">
-          <InfoCards filteredResults={filteredResults} source="https://fastly.picsum.photos/id/1002/800/400.jpg?hmac=aiLg5Y1Yk9qfv2bgkITz9jCoUP_NirxrP6E4n5FED2Y"/> 
+          <InfoCards filteredResults={filteredResults} source="https://fastly.picsum.photos/id/1002/800/400.jpg?hmac=aiLg5Y1Yk9qfv2bgkITz9jCoUP_NirxrP6E4n5FED2Y" 
+          /> 
         </div>
       </div>
     </div>
