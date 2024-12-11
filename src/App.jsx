@@ -97,7 +97,7 @@ export default function App() {
               <div className='front-spacer'>
                 <h1>Greater Manchester
                 <br/>
-                Autism Consortium</h1>           
+                Autism Consortium</h1>
                 <div className='front-body'>
                   <p>We’re here to help you find valuable information and connect with a community that understands.
                     Whether you’re a parent, caregiver, educator, or on the autism spectrum, we can help.</p>
@@ -114,11 +114,11 @@ export default function App() {
         </div>
       </div>
       <div className='pseudo-footer'>
-      {mounted && (
-        <div className={scrollPosition >= height ? "visible" : "hidden"}>         
-          <FAB />         
-        </div>
-      )}
+        {mounted && (
+          <div className={scrollPosition >= height ? "visible" : "hidden"}>         
+            <FAB />         
+          </div>
+        )}
         <div className="Info-cards">
           <InfoCards filteredResults={filteredResults} source="https://fastly.picsum.photos/id/1002/800/400.jpg?hmac=aiLg5Y1Yk9qfv2bgkITz9jCoUP_NirxrP6E4n5FED2Y" 
           /> 
