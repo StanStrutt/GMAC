@@ -66,6 +66,16 @@ h1 {
   padding: 0px 148px;
 }
 
+.hidden {
+  opacity: 0;
+  pointer-events: none;
+  transition: 0.5s ease;
+}
+
+.visible {
+  opacity: 1;
+  transition: 0.5s ease;
+}
 
 @media (max-width: 768px) {
   .fifty-fifty  {

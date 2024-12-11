@@ -3,26 +3,94 @@ import Dropdownmenu from './Components/Dropdown';
 import Dropdownlogic from './Components/DropdownLogic';
 import InfoCards from './Components/Infocards';
 import FAB from "./Components/FAB"
+import { useRef, useState, useEffect } from 'react';
 
 export default function App() {
 
   const {location, problem, ageRange, filteredResults, handleLocationDropdownChange, handleAgeRangeDropdownChange, handleProblemDropdownChange} = Dropdownlogic()
 
-  const scrollOnComplete = () => {
+  const [scrollToComplete, setScrollToComplete] = useState([])
+
+  useEffect(() => {
     if (filteredResults) {
-      setTimeout(() => {
-        window.scrollTo({
-          top: window.innerHeight + 1,
-          left: 0,
-          behaviour: "smooth"})
-      }, 800);
-    }}
+      const scrollOnComplete = () => {
+        setTimeout(() => {
+          window.scrollTo({
+            top: window.innerHeight + 1,
+            left: 0,
+            behaviour: "smooth"})
+        }, 800);
+      }
+      setScrollToComplete(scrollOnComplete)
+    } else {
+      setScrollToComplete([])
+    }
+  }, [filteredResults]);
+
+  // I guessed all of this, not correct because scrollToComplete is not used but it works
   
-    scrollOnComplete()
+  const [height, setHeight] = useState(0);
+  const elementRef = useRef(null);
+  
+  const updateHeight = () => {
+  if (elementRef.current) {
+      setHeight(elementRef.current.getBoundingClientRect().height);
+  }
+  };
+  
+  useEffect(() => {
+  // Initial height calculation
+  updateHeight();
+  
+  // Add a resize event listener
+  window.addEventListener('resize', updateHeight);
+  
+  return () => {
+      window.removeEventListener('resize', updateHeight);
+  };
+  }, []);
+
+  // console.log(height)
+
+  const [scrollPosition, setScrollPosition] = useState(0);
+
+  useEffect(() => {
+  const handleScroll = () => {
+      setScrollPosition(window.scrollY); // window.scrollY gives the vertical scroll position
+  };
+
+  window.addEventListener('scroll', handleScroll);
+
+  // Cleanup the event listener on component unmount
+  return () => {
+      window.removeEventListener('scroll', handleScroll);
+  };
+  }, []);
+
+  // console.log(scrollPosition)
+
+
+  // const scrollOnComplete = () => {
+  //   if (filteredResults)
+  //     setTimeout(() => {
+  //       window.scrollTo({
+  //         top: window.innerHeight + 1,
+  //         left: 0,
+  //         behaviour: "smooth"})
+  //     }, 800);
+  //   }
+
+
+  const [mounted, setMounted] = useState(false);
+
+    useEffect(() => {
+      setMounted(true); 
+    }, []);
+
 
   return (
     <div className="App">
-      <div className='img-background'>
+      <div className='img-background' ref={elementRef}>
         <div className='no-flex'>
           <div className='fifty-fifty'>
             <div className='front-text'>
@@ -45,8 +113,12 @@ export default function App() {
           </div>
         </div>
       </div>
-      <div className='pseudo-footer'>       
-        <FAB />
+      <div className='pseudo-footer'>
+      {mounted && (
+        <div className={scrollPosition >= height ? "visible" : "hidden"}>         
+          <FAB />         
+        </div>
+      )}
         <div className="Info-cards">
           <InfoCards filteredResults={filteredResults} source="https://fastly.picsum.photos/id/1002/800/400.jpg?hmac=aiLg5Y1Yk9qfv2bgkITz9jCoUP_NirxrP6E4n5FED2Y" 
           /> 
