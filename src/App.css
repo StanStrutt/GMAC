@@ -78,6 +78,32 @@ h1 {
   transition: 0.5s ease;
 }
 
+@media (max-width: 1024px) {
+  .fifty-fifty  {
+    padding: 0px;
+  }
+  .front-text {
+    padding: 0;
+  }
+  .front-spacer h1 {
+    font-size: 30px;
+  }
+  .front-body p {
+    font-size: 16px;
+    padding: 30px 0;
+  }
+  .label-holder input {
+    width: 90px;
+  }
+  .pseudo-footer {
+    padding: 0 12px;
+  }
+  .visible {
+    opacity: 0;
+    pointer-events: none;
+  }
+}
+
 @media (max-width: 768px) {
   .fifty-fifty  {
     padding: 0px;
