@@ -28,7 +28,7 @@
 }
   
 
-@media (max-width: 376px) {
+@media screen and (max-width: 376px) {
   .label-holder select {
     font-size: 14px;
     padding: 4px 2px;
@@ -41,7 +41,7 @@
   }
 }
 
-@media (max-width: 321px) {
+@media screen and (max-width: 321px) {
   .label-holder select {
     width: 105px;
   }

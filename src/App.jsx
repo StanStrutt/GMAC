@@ -20,22 +20,6 @@ export default function App() {
         }, 800);
       } 
     }, [filteredResults]);
-
-  // I guessed all of this, not correct because scrollToComplete is not used but it works
-
-  // const scrollOnComplete = () => {
-  //   if (filteredResults)
-  //     setTimeout(() => {
-  //       window.scrollTo({
-  //         top: window.innerHeight + 1,
-  //         left: 0,
-  //         behaviour: "smooth"})
-  //     }, 800);
-  //   }
-
-  //      scrollOnComplete()
-
-  //what I was using before
   
   const [height, setHeight] = useState(0);
   const elementRef = useRef(null);
@@ -74,20 +58,6 @@ export default function App() {
       window.removeEventListener('scroll', handleScroll);
   };
   }, []);
-
-  // console.log(scrollPosition)
-
-
-  // const scrollOnComplete = () => {
-  //   if (filteredResults)
-  //     setTimeout(() => {
-  //       window.scrollTo({
-  //         top: window.innerHeight + 1,
-  //         left: 0,
-  //         behaviour: "smooth"})
-  //     }, 800);
-  //   }
-
 
   const [mounted, setMounted] = useState(false);
 
